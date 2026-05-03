@@ -27,3 +27,23 @@ sed -i 's/-march=native//' Makefile
 sed -i 's/C_MPI_COMPILER_GNU = gcc/C_MPI_COMPILER_GNU = riscv64-linux-gnu-gcc/' Makefile
 make COMPILER=GNU
 ```
+
+## RAxML — Phylogenetics (row 97)
+- Source: https://github.com/stamatak/standard-RAxML
+- Status: ✅ COMPILED AND RUNNING
+
+### Fixes Required
+1. Used Makefile.gcc instead of Makefile.SSE3.gcc
+2. Removed -msse flags: `sed -i 's/-msse[^ ]*//g' Makefile.gcc`
+3. Guarded xmmintrin.h: `#ifndef __x86_64__`
+4. Stubbed _mm_setcsr call at line 13723
+
+### Error Classification
+- Class C: x86 SSE flags (-msse, -msse3) — invalid on RISC-V
+- Class C: x86 SSE headers (xmmintrin.h)
+- Class C: x86 SSE runtime intrinsics (_mm_setcsr)
+
+### Automation Pattern
+All Class C fixes are scriptable:
+  sed -i 's/-msse[^ ]*//g' Makefile
+  sed -i 's/#include <xmmintrin.h>/#ifndef __x86_64__\n\/\/skipped\n#endif/' *.c
