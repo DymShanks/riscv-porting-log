@@ -33,3 +33,7 @@ Clover Version    1.300
 === RAxML QEMU Output ===
 
  Error, you must specify a model of substitution with the "-m" option
+raxmlHPC: cannot open `raxmlHPC' (No such file or directory)
+=== RAxML QEMU Output ===
+
+ Error, you must specify a model of substitution with the "-m" option
