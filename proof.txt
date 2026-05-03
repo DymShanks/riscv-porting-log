@@ -1,0 +1,23 @@
+clover_leaf: ELF 64-bit LSB pie executable, UCB RISC-V, RVC, double-float ABI, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-riscv64-lp64d.so.1, BuildID[sha1]=7bc5f43e9a2bb2dd902642a9f8a01e6a7f581578, for GNU/Linux 4.15.0, not stripped
+
+=== QEMU Execution Output ===
+
+Clover Version    1.300
+       MPI Version
+   Task Count      1
+
+
+Clover Version    1.300
+       MPI Version
+   Task Count      1
+
+ Output file clover.out opened. All output will go there.
+ Step       1 time   0.0000000 control    sound    timestep   6.16E-03       1,       1 x  5.21E-03 y  5.21E-03
+ Wall clock    1.3101401329040527     
+ Average time per cell    1.4215930261545712E-006
+ Step time per cell       1.4215355945958032E-006
+ Step       2 time   0.0061626 control    sound    timestep   3.76E-03       1,       1 x  5.21E-03 y  5.21E-03
+ Wall clock    2.5865981578826904     
+ Average time per cell    1.4033193130873971E-006
+ Step time per cell       1.3846495292252964E-006
+ Step       3 time   0.0099242 control    sound    timestep   4.78E-03       1,       1 x  5.21E-03 y  5.21E-03
