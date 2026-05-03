@@ -27,3 +27,9 @@ Clover Version    1.300
 === RAxML QEMU Output ===
 
  Error, you must specify a model of substitution with the "-m" option
+
+=== RAxML ===
+/home/d1/standard-RAxML/raxmlHPC: ELF 64-bit LSB pie executable, UCB RISC-V, RVC, double-float ABI, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-riscv64-lp64d.so.1, BuildID[sha1]=46480c74d374abc602d810127c5b5a2ca69fc6f4, for GNU/Linux 4.15.0, not stripped
+=== RAxML QEMU Output ===
+
+ Error, you must specify a model of substitution with the "-m" option
